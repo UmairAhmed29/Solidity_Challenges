@@ -1,5 +1,4 @@
-//Challenge#1:Create a smart contract to store and retrieve values.Not that tough? Here’s the catch, you must use mapping and struct.Are you familiar with JSON objects? If yes then you know the insides of struct, and well, it is what lies inside that really matters, and inside the struct lies attributes just like JSON. 
-
+//Challenge#1:Create a smart contract to store and retrieve values.
 
 
 //SPDX-License-Identifier: UNLICENSED
