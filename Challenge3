@@ -4,8 +4,7 @@
 
 //SPDX-License-Identifier: UNLICENSED
 // Solidity program
-// to store
-// STudent Details
+
 
 pragma solidity ^0.8.17;
 
