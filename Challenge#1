@@ -1,0 +1,73 @@
+//Challenge#1:Create a smart contract to store and retrieve values.Not that tough? Here’s the catch, you must use mapping and struct.Are you familiar with JSON objects? If yes then you know the insides of struct, and well, it is what lies inside that really matters, and inside the struct lies attributes just like JSON. 
+
+
+
+//SPDX-License-Identifier: UNLICENSED
+// Solidity program
+// to store
+// STudent Details
+pragma solidity ^0.8.9;
+
+// Creating a Smart Contract
+contract StructDemo{
+
+// Structure of student
+struct Student{
+	
+	// State variables
+	int studid;
+	string name;
+	string department;
+	string rollnumber;
+}
+
+Student []studs;
+
+// Function to add
+// student details
+function addStudent(
+	int studid, string memory name,
+	string memory department,
+	string memory rollnumber
+) public{
+	Student memory s
+		=Student(studid,
+				name,
+				department,
+				rollnumber);
+	studs.push(s);
+}
+
+// Function to get
+// details of Student
+function getStudent(
+	int studid
+) public view returns(
+	string memory,
+	string memory,
+	string memory){
+	uint i;
+	for(i=0;i<studs.length;i++)
+	{
+		Student memory s
+			=studs[i];
+		
+		// Looks for a matching
+		// student id
+		if(s.studid==studid)
+		{
+				return(s.name,
+					s.department,
+					s.rollnumber);
+		}
+	}
+	
+	// If provided student
+	// id is not present
+	// it returns Not
+	// Found
+	return("Not Found",
+			"Not Found",
+			"Not Found");
+}
+}
