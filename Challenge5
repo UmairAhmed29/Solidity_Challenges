@@ -1,4 +1,4 @@
-//Challenge#5;Create a smart contract to store ethers in it. But you already did that in challenge 3.Here is what you have to do, make it so that the user can’t withdraw them before a specific time.
+//Challenge#5;Create a smart contract to store ethers in it.Here is what you have to do, make it so that the user can’t withdraw them before a specific time.
 
 
 //SPDX-License-Identifier: UNLICENSED
